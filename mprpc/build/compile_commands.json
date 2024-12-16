@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/example/callee",
+  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/provider.dir/userservice.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/callee/userservice.cc",
+  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/callee/userservice.cc"
+},
+{
+  "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/example/callee",
+  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/user.pb.cc",
+  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/user.pb.cc"
+}
+]
