@@ -2,7 +2,8 @@
 #include <string>
 
 #include "user.pb.h"
-
+#include "mprpcapplication.h"
+#include "rpcprovider.h"
  /**
   *UserService是个本地服务，提供了两个进程内的本地方法，Login和GetFriendLists
   *你想把你的本地服务变成远程服务就得写proto并编译，然后本地服务继承生成的RPC服务类，重写他的虚函数
@@ -42,7 +43,16 @@ public:
     }
 };
 
-int main(){
+int main(int argc,char **argv){
+    //调用框架初始化操作
+    MprpcApplication::Init(argc,argv);
+
+    //把UserService对象发布到rpc站点上,provider是个rpc网络服务对象
+    RpcProvider provider;
+    provider.NotifyService(new UserService());
+
+    //启动一个rpc服务发布节点，Run以后进程进入阻塞状态，等待远程rpc调用请求
+    provider.Run();
 
     return 0;
 }

@@ -12,6 +12,7 @@
 		[
 			"add_executable",
 			"link_directories",
+			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
@@ -36,19 +37,25 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 14,
+				"line" : 15,
 				"parent" : 2
 			},
 			{
 				"command" : 2,
-				"file" : 1,
-				"line" : 11,
-				"parent" : 2
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 1,
 				"line" : 12,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 13,
 				"parent" : 2
 			}
 		]
@@ -65,11 +72,11 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
-					"path" : "/home/moyoj/\u684c\u9762/github/MPRPC\u901a\u4fe1\u7f51\u7edc\u6846\u67b6\u9879\u76ee/mprpc/src"
+					"backtrace" : 5,
+					"path" : "/home/moyoj/\u684c\u9762/github/MPRPC\u901a\u4fe1\u7f51\u7edc\u6846\u67b6\u9879\u76ee/mprpc/src/include"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "/home/moyoj/\u684c\u9762/github/MPRPC\u901a\u4fe1\u7f51\u7edc\u6846\u67b6\u9879\u76ee/mprpc/example"
 				}
 			],
@@ -79,6 +86,13 @@
 				0,
 				1
 			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "mprpc::@145eef247bfb46b6828c"
 		}
 	],
 	"id" : "provider::@493cd8b262c97a98b12b",
@@ -98,6 +112,20 @@
 				"backtrace" : 3,
 				"fragment" : "-L/home/moyoj/\u684c\u9762/github/MPRPC\u901a\u4fe1\u7f51\u7edc\u6846\u67b6\u9879\u76ee/mprpc/lib",
 				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/moyoj/\u684c\u9762/github/MPRPC\u901a\u4fe1\u7f51\u7edc\u6846\u67b6\u9879\u76ee/mprpc/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "../../../lib/libmprpc.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lprotobuf",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
