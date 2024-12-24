@@ -209,15 +209,6 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Project_BINARY_DIR:STATIC=/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build
-
-//Value Computed by CMake
-Project_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc
-
-//Value Computed by CMake
 mprpc_BINARY_DIR:STATIC=/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build
 
 //Value Computed by CMake

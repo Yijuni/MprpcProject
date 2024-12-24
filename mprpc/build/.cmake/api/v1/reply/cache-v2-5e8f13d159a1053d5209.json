@@ -1118,42 +1118,6 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "Project_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/moyoj/\u684c\u9762/github/MPRPC\u901a\u4fe1\u7f51\u7edc\u6846\u67b6\u9879\u76ee/mprpc/build"
-		},
-		{
-			"name" : "Project_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "Project_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/moyoj/\u684c\u9762/github/MPRPC\u901a\u4fe1\u7f51\u7edc\u6846\u67b6\u9879\u76ee/mprpc"
-		},
-		{
 			"name" : "mprpc_BINARY_DIR",
 			"properties" : 
 			[

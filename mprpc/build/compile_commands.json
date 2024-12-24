@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/src",
+  "command": "/usr/bin/g++ -Dmprpc_EXPORTS -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -fPIC -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/mprpcconfig.cc",
+  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/src",
   "command": "/usr/bin/g++ -Dmprpc_EXPORTS -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -fPIC -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/rpcprovider.cc",
   "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/rpcprovider.cc"
 },
