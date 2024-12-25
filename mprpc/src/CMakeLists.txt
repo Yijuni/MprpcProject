@@ -6,4 +6,5 @@ aux_source_directory(. SRC_LIST)
 # 添加编译的文件
 # set(SRC_LIST mprpcapplication.cc mprpcconfig.cc) 
 #生成动态库
-add_library(mprpc SHARED ${SRC_LIST})
+add_library(mprpc ${SRC_LIST})
+target_link_libraries(mprpc muduo_net muduo_base pthread)
