@@ -45,6 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/example/callee/cmake_install.cmake")
+  include("/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/example/caller/cmake_install.cmake")
 
 endif()
 

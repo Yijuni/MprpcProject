@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 #include "user.pb.h"
 #include "mprpcapplication.h"
 #include "rpcprovider.h"
@@ -15,7 +14,7 @@ public:
     bool Login(std::string name,std::string pwd){
         std::cout<<"doing local service : Login"<<std::endl;
         std::cout<<"name: "<<name<<" pwd:"<<pwd<<std::endl;
-        return true;
+        return false;
     }
 
     /**
@@ -34,8 +33,8 @@ public:
         
         //把响应写入response 错误码，错误消息，返回值
         fixbug::ResultCode *code = response->mutable_result();
-        code->set_errmsg("");
-        code->set_errorcode(0);
+        code->set_errmsg("Login error");
+        code->set_errorcode(1);
         response->set_success(login_result);
 
         //执行回调操作,把你填入的response序列化通过网络发送回去
