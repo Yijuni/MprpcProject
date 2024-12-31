@@ -16,13 +16,30 @@ int main(int argc,char** argv){
     request.set_pwd("123456");
     //rpc方法的响应
     fixbug::LoginResponse response;
+
     //rpc方法的调用，同步rpc调用过程 MprpcChannel::callMethod
     stub.Login(nullptr,&request,&response,nullptr);
-
     //rpc方法调用完成，读调用结果
     if(response.result().errorcode()!=0){
         std::cout<<"rpc login response error:"<<response.result().errmsg()<<std::endl;
     }
     std::cout<<"rpc login response:"<<response.success()<<std::endl;
+
+    std::cout<<"------------------------"<<std::endl;
+
+    //演示调用远程发布的rpc方法Register
+    fixbug::RegisterRequest req;
+    req.set_id(2000);
+    req.set_name("mprpc");
+    req.set_pwd("6666");
+    fixbug::RegisterResponse rsp;
+
+    //以同步方式发起rpc调用请求，等待返回结果
+    stub.Register(nullptr,&req,&rsp,nullptr);
+    //rpc方法调用完成，读调用结果
+    if(rsp.result().errorcode()!=0){
+        std::cout<<"rpc login response error:"<<response.result().errmsg()<<std::endl;
+    }
+    std::cout<<"rpc register response:"<<response.success()<<std::endl;
     return 0;
 }

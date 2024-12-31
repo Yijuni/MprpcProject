@@ -13,13 +13,28 @@ message LoginRequest{
     bytes pwd = 2;
 }
 
-//服务提供者的方法的返回值类型 bool Login(string name,string pwd)
+//服务提供者的方法的返回值类型
 message LoginResponse{
     ResultCode result = 1;
     bool success = 2;
 }
 
+//服务提供者的方法的参数类型 Register(int id,std::string name,std::string pwd)
+message RegisterRequest{
+    uint32 id = 1;
+    bytes name = 2;
+    bytes pwd = 3;
+}
+
+//服务提供者的方法的返回值类型
+message RegisterResponse{
+    ResultCode result = 1;
+    bool success = 2;
+}
+
+
 //定义rpc的服务，也就是服务消费者想要调用的服务（服务提供者的方法）
 service UserServiceRPC{
     rpc Login(LoginRequest) returns (LoginResponse);
+    rpc Register(RegisterRequest) returns (RegisterResponse);
 }

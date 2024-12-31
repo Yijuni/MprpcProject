@@ -1,0 +1,25 @@
+syntax  = "proto3";//版本
+package fixbug;//namespace的名字
+option cc_generic_services = true;
+
+message ResultCode{
+    int32 errorcode = 1;
+    bytes errmsg = 2;
+}
+
+//服务提供者的方法的参数类型 Register(int id,std::string name,std::string pwd)
+message GetFriendsListRequest{
+    uint32 userid = 1;
+}
+
+//服务提供者的方法的返回值类型
+message GetFriendsListResponse{
+    ResultCode result = 1;
+    repeated bytes friends = 2;
+}
+
+
+//好友模块
+service FriendServiceRPC{
+    rpc GetFriendList(GetFriendsListRequest) returns (GetFriendsListResponse);
+}

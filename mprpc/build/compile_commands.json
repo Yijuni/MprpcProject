@@ -26,22 +26,22 @@
 },
 {
   "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/example/callee",
-  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/provider.dir/userservice.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/callee/userservice.cc",
-  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/callee/userservice.cc"
+  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/callee/friendservice.cc",
+  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/callee/friendservice.cc"
 },
 {
   "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/example/callee",
-  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/provider.dir/__/user.pb.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/user.pb.cc",
-  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/user.pb.cc"
+  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/friend.pb.cc",
+  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/friend.pb.cc"
 },
 {
   "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/example/caller",
-  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/consumer.dir/calluserservice.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/caller/calluserservice.cc",
-  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/caller/calluserservice.cc"
+  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/consumer.dir/callfriendservice.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/caller/callfriendservice.cc",
+  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/caller/callfriendservice.cc"
 },
 {
   "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/example/caller",
-  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/consumer.dir/__/user.pb.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/user.pb.cc",
-  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/user.pb.cc"
+  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/friend.pb.cc",
+  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/friend.pb.cc"
 }
 ]

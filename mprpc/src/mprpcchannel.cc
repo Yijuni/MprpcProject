@@ -43,12 +43,12 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,g
     send_rpc_str+=rpc_header_str;
     send_rpc_str+=request_str;
 
-        //打印调试信息
+    //打印调试信息
     std::cout<<"===================================="<<std::endl;
     std::cout<<"header_size: "<<rpc_header_str_size<<std::endl;
     std::cout<<"rpc_header_str:"<<rpc_header_str<<std::endl;
     std::cout<<"service_name:"<<service_name<<std::endl;
-    std::cout<<"method_name"<<method_name<<std::endl;
+    std::cout<<"method_name:"<<method_name<<std::endl;
     std::cout<<"args_str:"<<request_str<<std::endl;
     std::cout<<"===================================="<<std::endl;
 

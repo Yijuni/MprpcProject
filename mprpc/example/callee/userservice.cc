@@ -14,9 +14,13 @@ public:
     bool Login(std::string name,std::string pwd){
         std::cout<<"doing local service : Login"<<std::endl;
         std::cout<<"name: "<<name<<" pwd:"<<pwd<<std::endl;
-        return false;
+        return true;
     }
-
+    bool Register(uint32_t id,std::string name,std::string pwd){
+        std::cout<<"doing local service : Register"<<std::endl;
+        std::cout<<"id: "<<id<<"name: "<<name<<" pwd:"<<pwd<<std::endl;
+        return true;
+    }
     /**
      * 重写基类UserServiceRPC的虚函数，下面这些方法都是框架直接调用的,服务消费者调用服务后，经过网络传输到达服务提供者
      *进而框架会调用服务提供者的RPC方法，进而调用本地方法进行具体业务处理，不用关心怎么进行消息传输、怎么序列化反序列化的
@@ -40,6 +44,21 @@ public:
         //执行回调操作,把你填入的response序列化通过网络发送回去
         done->Run(); 
     }
+    void Register(google::protobuf::RpcController* controller,const ::fixbug::RegisterRequest* request,
+            fixbug::RegisterResponse* response,google::protobuf::Closure* done)
+    {
+        uint32_t id = request->id();
+        std::string name = request->name();
+        std::string pwd = request->pwd();
+
+        bool ret = Register(id,name,pwd);
+
+        response->mutable_result()->set_errorcode(0);
+        response->mutable_result()->set_errmsg("");
+        response->set_success(ret);
+        
+        done->Run();
+    }
 };
 
 int main(int argc,char **argv){
@@ -52,6 +71,6 @@ int main(int argc,char **argv){
 
     //启动一个rpc服务发布节点，Run以后进程进入阻塞状态，等待远程rpc调用请求
     provider.Run();
-
+    
     return 0;
 }
