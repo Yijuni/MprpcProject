@@ -1,6 +1,5 @@
 #include "friend.pb.h"
 #include "mprpcapplication.h"
-#include "mprpcchannel.h"
 #include <iostream>
 
 int main(int argc,char** argv){
@@ -15,10 +14,14 @@ int main(int argc,char** argv){
     request.set_userid(114514);
     //rpc方法的响应
     fixbug::GetFriendsListResponse response;
-
+    MprpcController controller;
     //rpc方法的调用，同步rpc调用过程 MprpcChannel::callMethod
-    stub.GetFriendList(nullptr,&request,&response,nullptr);
+    stub.GetFriendList(&controller,&request,&response,nullptr);
     //rpc方法调用完成，读调用结果
+    if(controller.Failed()){
+        std::cout<<controller.ErrorText()<<std::endl;
+        return 0;
+    }
     if(response.result().errorcode()!=0){
         std::cout<<"rpc login response error:"<<response.result().errmsg()<<std::endl;
     }

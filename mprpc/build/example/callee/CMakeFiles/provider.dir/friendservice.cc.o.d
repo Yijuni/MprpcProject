@@ -159,7 +159,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
- /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include/rpcprovider.h \
+ /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include/mprpcchannel.h \
  /usr/local/include/google/protobuf/service.h \
  /usr/local/include/google/protobuf/stubs/callback.h \
  /usr/local/include/google/protobuf/stubs/macros.h \
@@ -247,13 +247,49 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /usr/local/include/google/protobuf/stubs/once.h \
+ /usr/local/include/google/protobuf/message.h \
+ /usr/local/include/google/protobuf/stubs/casts.h \
+ /usr/local/include/google/protobuf/arena.h \
+ /usr/local/include/google/protobuf/arena_impl.h \
+ /usr/include/c++/11/atomic \
+ /usr/local/include/google/protobuf/stubs/logging.h \
+ /usr/local/include/google/protobuf/port.h \
+ /usr/local/include/google/protobuf/generated_message_reflection.h \
+ /usr/local/include/google/protobuf/generated_enum_reflection.h \
+ /usr/local/include/google/protobuf/generated_enum_util.h \
+ /usr/local/include/google/protobuf/message_lite.h \
+ /usr/include/c++/11/climits \
+ /usr/local/include/google/protobuf/io/coded_stream.h \
+ /usr/include/c++/11/cstring \
+ /usr/local/include/google/protobuf/stubs/strutil.h \
+ /usr/local/include/google/protobuf/stubs/stringpiece.h \
+ /usr/local/include/google/protobuf/stubs/hash.h \
+ /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /usr/local/include/google/protobuf/metadata.h \
+ /usr/local/include/google/protobuf/metadata_lite.h \
+ /usr/local/include/google/protobuf/generated_message_util.h \
+ /usr/local/include/google/protobuf/any.h \
+ /usr/local/include/google/protobuf/arenastring.h \
+ /usr/local/include/google/protobuf/stubs/fastmem.h \
+ /usr/local/include/google/protobuf/has_bits.h \
+ /usr/local/include/google/protobuf/implicit_weak_message.h \
+ /usr/local/include/google/protobuf/repeated_field.h \
+ /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/local/include/google/protobuf/wire_format_lite.h \
+ /usr/local/include/google/protobuf/unknown_field_set.h \
+ /usr/local/include/google/protobuf/parse_context.h \
+ /usr/local/include/google/protobuf/io/zero_copy_stream.h \
+ /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
+ /usr/local/include/google/protobuf/stubs/stl_util.h \
+ /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include/mprpccontroller.h \
+ /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include/rpcprovider.h \
  /usr/include/muduo/net/TcpServer.h /usr/include/muduo/base/Atomic.h \
  /usr/include/muduo/base/noncopyable.h /usr/include/muduo/base/Types.h \
  /usr/include/muduo/net/TcpConnection.h \
  /usr/include/muduo/base/StringPiece.h /usr/include/muduo/net/Callbacks.h \
  /usr/include/muduo/base/Timestamp.h /usr/include/muduo/base/copyable.h \
- /usr/include/boost/operators.hpp /usr/include/c++/11/iterator \
- /usr/include/c++/11/bits/stream_iterator.h /usr/include/boost/config.hpp \
+ /usr/include/boost/operators.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp \
@@ -290,7 +326,7 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: \
  /usr/include/boost/type_index/stl_type_index.hpp \
  /usr/include/boost/type_index/type_index_facade.hpp \
  /usr/include/boost/container_hash/hash_fwd.hpp \
- /usr/include/c++/11/cstring /usr/include/boost/static_assert.hpp \
+ /usr/include/boost/static_assert.hpp \
  /usr/include/boost/throw_exception.hpp \
  /usr/include/boost/assert/source_location.hpp \
  /usr/include/boost/current_function.hpp /usr/include/boost/cstdint.hpp \
@@ -319,47 +355,14 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: \
  /usr/include/boost/utility/enable_if.hpp \
  /usr/include/boost/core/enable_if.hpp \
  /usr/include/boost/type_traits/is_same.hpp \
- /usr/include/muduo/net/EventLoop.h /usr/include/c++/11/atomic \
- /usr/include/muduo/base/Mutex.h /usr/include/muduo/base/CurrentThread.h \
- /usr/include/muduo/net/TimerId.h \
+ /usr/include/muduo/net/EventLoop.h /usr/include/muduo/base/Mutex.h \
+ /usr/include/muduo/base/CurrentThread.h /usr/include/muduo/net/TimerId.h \
  /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/friend.pb.h \
- /usr/local/include/google/protobuf/io/coded_stream.h \
- /usr/include/c++/11/climits \
- /usr/local/include/google/protobuf/stubs/logging.h \
- /usr/local/include/google/protobuf/stubs/strutil.h \
- /usr/local/include/google/protobuf/stubs/stringpiece.h \
- /usr/local/include/google/protobuf/stubs/hash.h \
- /usr/include/c++/11/unordered_set \
- /usr/include/c++/11/bits/unordered_set.h \
- /usr/local/include/google/protobuf/port.h \
- /usr/local/include/google/protobuf/arena.h \
- /usr/local/include/google/protobuf/arena_impl.h \
- /usr/local/include/google/protobuf/arenastring.h \
- /usr/local/include/google/protobuf/stubs/fastmem.h \
  /usr/local/include/google/protobuf/generated_message_table_driven.h \
  /usr/local/include/google/protobuf/map.h \
- /usr/local/include/google/protobuf/generated_enum_util.h \
- /usr/local/include/google/protobuf/message_lite.h \
  /usr/local/include/google/protobuf/map_type_handler.h \
- /usr/local/include/google/protobuf/parse_context.h \
- /usr/local/include/google/protobuf/io/zero_copy_stream.h \
- /usr/local/include/google/protobuf/implicit_weak_message.h \
- /usr/local/include/google/protobuf/repeated_field.h \
- /usr/local/include/google/protobuf/stubs/casts.h \
- /usr/local/include/google/protobuf/metadata_lite.h \
- /usr/local/include/google/protobuf/generated_message_util.h \
- /usr/local/include/google/protobuf/any.h \
- /usr/local/include/google/protobuf/has_bits.h \
- /usr/local/include/google/protobuf/wire_format_lite.h \
  /usr/local/include/google/protobuf/map_entry_lite.h \
  /usr/local/include/google/protobuf/map_field_lite.h \
  /usr/local/include/google/protobuf/inlined_string_field.h \
- /usr/local/include/google/protobuf/metadata.h \
- /usr/local/include/google/protobuf/unknown_field_set.h \
- /usr/local/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
- /usr/local/include/google/protobuf/stubs/stl_util.h \
- /usr/local/include/google/protobuf/generated_message_reflection.h \
- /usr/local/include/google/protobuf/generated_enum_reflection.h \
- /usr/local/include/google/protobuf/message.h \
  /usr/local/include/google/protobuf/extension_set.h \
  /usr/include/c++/11/cassert
