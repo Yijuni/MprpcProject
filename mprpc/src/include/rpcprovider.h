@@ -2,6 +2,7 @@
 #include "google/protobuf/service.h"
 #include "google/protobuf/descriptor.h"
 #include "mprpcapplication.h"
+#include "logger.h"
 #include <string>
 #include <functional>
 #include <memory>

@@ -13,7 +13,7 @@ void RpcProvider::NotifyService(google::protobuf::Service *service)
     //获取服务对象的方法数量(也就是类里面的成员函数)
     int methodCount = pserviceDesc->method_count();
 
-    std::cout<<"service_name:"<<service_name<<std::endl;
+    LOG_INFO("service name: %s ",service_name.c_str());
 
     //添加服务方法名及其对应的描述器到服务信息中
     for(int i=0;i<methodCount;i++){
@@ -21,7 +21,7 @@ void RpcProvider::NotifyService(google::protobuf::Service *service)
         const google::protobuf::MethodDescriptor* pmethodDesc = pserviceDesc->method(i);
         std::string method_name = pmethodDesc->name();
         service_info.m_methodMap.insert({method_name,pmethodDesc});
-        std::cout<<"method"<<i<<" name: "<<method_name<<std::endl;
+        LOG_INFO("service name: %s ",method_name.c_str());
     }
     //把这个服务及其信息添加到map中
     m_serviceMap.insert({service_name,service_info});
@@ -109,6 +109,7 @@ void RpcProvider::OnMessage(const muduo::net::TcpConnectionPtr & connptr, muduo:
     auto method_iter = service_iter->second.m_methodMap.find(method_name);
     if(method_iter==service_iter->second.m_methodMap.end()){
          std::cout<<"service:"<<service_name<< " -> method:"<<method_name<<" is not exist!"<<std::endl;
+         return;
     }
 
     google::protobuf::Service *service = service_iter->second.m_service;//获取service对象

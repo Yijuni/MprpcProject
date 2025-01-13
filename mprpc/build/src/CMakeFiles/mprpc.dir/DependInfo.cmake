@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/logger.cc" "src/CMakeFiles/mprpc.dir/logger.cc.o" "gcc" "src/CMakeFiles/mprpc.dir/logger.cc.o.d"
   "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/mprpcapplication.cc" "src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o" "gcc" "src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o.d"
   "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/mprpcchannel.cc" "src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o" "gcc" "src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o.d"
   "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/mprpcconfig.cc" "src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o" "gcc" "src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o.d"

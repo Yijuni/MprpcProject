@@ -3,6 +3,7 @@
 #include "mprpcapplication.h"
 #include "rpcprovider.h"
 #include "friend.pb.h"
+#include "logger.h"
 #include <vector>
 class FriendService:public fixbug::FriendServiceRPC
 {
@@ -36,6 +37,8 @@ public:
 };
 
 int main(int argc,char** argv){
+    LOG_INFO("first log message!\n");
+    LOG_ERROR("%s,%s,%d",__FILE__,__FUNCTION__,__LINE__);
     MprpcApplication::Init(argc,argv);
     RpcProvider provider;
     provider.NotifyService(new FriendService());

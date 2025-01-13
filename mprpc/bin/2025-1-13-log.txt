@@ -1,0 +1,4 @@
+
+9-53-24 => first log message!
+
+9-53-24 => /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/callee/friendservice.cc,main,41

@@ -284,6 +284,14 @@ example/callee/CMakeFiles/provider.dir/friendservice.cc.o: \
  /usr/local/include/google/protobuf/stubs/stl_util.h \
  /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include/mprpccontroller.h \
  /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include/rpcprovider.h \
+ /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include/logger.h \
+ /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include/lockqueue.h \
+ /usr/include/c++/11/queue /usr/include/c++/11/deque \
+ /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
+ /usr/include/c++/11/bits/stl_queue.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/c++/11/condition_variable \
  /usr/include/muduo/net/TcpServer.h /usr/include/muduo/base/Atomic.h \
  /usr/include/muduo/base/noncopyable.h /usr/include/muduo/base/Types.h \
  /usr/include/muduo/net/TcpConnection.h \
