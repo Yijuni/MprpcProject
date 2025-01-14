@@ -2,6 +2,7 @@
 #include "mprpcapplication.h"
 #include "rpcheader.pb.h"
 #include "mprpccontroller.h"
+#include "zookeeperutil.h"
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
@@ -63,8 +64,28 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,g
         return;
     }
 
-    std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
-    uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+    //这是从配置文件读rpc服务所在主机的ip和端口
+    // std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserverip");
+    // uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserverport").c_str());
+
+    //这是从zookeeper注册中心读取服务所在的ip+端口
+    ZkClient zkCli;
+    zkCli.Start();
+    std::string method_path = "/"+service_name+"/"+method_name;
+    std::string ipport = zkCli.GetData(method_path.c_str());
+    if(ipport==""){
+        controller->SetFailed("method ip+port get from zookeeper server failed!");
+        close(client_fd);
+        return;
+    }
+    int pos = ipport.find(":");
+    if(pos==-1){
+        controller->SetFailed(ipport+"address is not valid!");
+        return;
+    }
+    std::string ip = ipport.substr(0,pos);
+    uint32_t port = stoi(ipport.substr(pos+1));
+
     sockaddr_in server_addr;
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(port);

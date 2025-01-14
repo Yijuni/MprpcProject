@@ -35,6 +35,11 @@
   "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/rpcprovider.cc"
 },
 {
+  "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/src",
+  "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/mprpc.dir/zookeeperutil.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/zookeeperutil.cc",
+  "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/zookeeperutil.cc"
+},
+{
   "directory": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/build/example/callee",
   "command": "/usr/bin/g++  -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/src/include -I/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example -g -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/callee/friendservice.cc",
   "file": "/home/moyoj/桌面/github/MPRPC通信网络框架项目/mprpc/example/callee/friendservice.cc"
